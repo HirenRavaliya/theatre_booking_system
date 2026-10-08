@@ -1,0 +1,9 @@
+{
+ "actions": [], "doctype": "DocType", "editable_grid": 1, "engine": "InnoDB", "istable": 1,
+ "field_order": ["row_alphabet", "seat_number"],
+ "fields": [
+  {"fieldname": "row_alphabet", "fieldtype": "Data", "in_list_view": 1, "label": "Row", "reqd": 1},
+  {"fieldname": "seat_number", "fieldtype": "Int", "in_list_view": 1, "label": "Seat Number", "reqd": 1}
+ ],
+ "module": "Theatre Booking System", "name": "book seat", "permissions": []
+}

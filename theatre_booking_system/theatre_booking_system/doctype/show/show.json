@@ -1,0 +1,12 @@
+{
+ "actions": [], "allow_rename": 1, "autoname": "field:show_name", "doctype": "DocType", "engine": "InnoDB", "naming_rule": "By fieldname",
+ "field_order": ["show_name", "description", "duration_minutes", "is_active"],
+ "fields": [
+  {"fieldname": "show_name", "fieldtype": "Data", "in_list_view": 1, "label": "Title", "reqd": 1, "unique": 1},
+  {"fieldname": "description", "fieldtype": "Text", "label": "Description"},
+  {"fieldname": "duration_minutes", "fieldtype": "Int", "in_list_view": 1, "label": "Duration (Minutes)", "reqd": 1},
+  {"default": "1", "fieldname": "is_active", "fieldtype": "Check", "in_list_view": 1, "label": "Is Active"}
+ ],
+ "module": "Theatre Booking System", "name": "show", "permissions": [{"create": 1, "delete": 1, "read": 1, "write": 1, "role": "System Manager"}],
+ "title_field": "show_name", "show_title_field_in_link": 1, "search_fields": "show_name"
+}

@@ -1,0 +1,15 @@
+{
+ "actions": [], "allow_rename": 1, "autoname": "field:booking_reference", "doctype": "DocType", "engine": "InnoDB", "naming_rule": "By fieldname",
+ "field_order": ["booking_reference", "show_schedule", "customer_name", "status", "ticket_price", "seats", "amount_due"],
+ "fields": [
+  {"fieldname": "booking_reference", "fieldtype": "Data", "in_list_view": 1, "label": "Booking Reference", "reqd": 1, "unique": 1},
+  {"fieldname": "show_schedule", "fieldtype": "Link", "in_list_view": 1, "in_standard_filter": 1, "label": "Show Schedule", "options": "show schedule", "reqd": 1},
+  {"fieldname": "customer_name", "fieldtype": "Data", "in_list_view": 1, "label": "Customer Name", "reqd": 1},
+  {"default": "Confirmed", "fieldname": "status", "fieldtype": "Select", "in_list_view": 1, "in_standard_filter": 1, "label": "Status", "options": "Confirmed\nCancelled", "reqd": 1},
+  {"fieldname": "ticket_price", "fieldtype": "Currency", "label": "Ticket Price", "read_only": 1},
+  {"fieldname": "seats", "fieldtype": "Table", "label": "Booked Seats", "options": "book seat", "reqd": 1},
+  {"fieldname": "amount_due", "fieldtype": "Currency", "in_list_view": 1, "label": "Amount Due", "read_only": 1}
+ ],
+ "module": "Theatre Booking System", "name": "ticket booking", "permissions": [{"create": 1, "delete": 1, "read": 1, "write": 1, "role": "System Manager"}],
+ "title_field": "booking_reference", "show_title_field_in_link": 1, "search_fields": "booking_reference, customer_name"
+}

@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:theatre_name",
+ "creation": "2026-10-08 10:34:54.601017",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_sj7l",
+  "theatre_name",
+  "address",
+  "active"
+ ],
+ "fields": [
+  {
+   "fieldname": "theatre_name",
+   "fieldtype": "Data",
+   "label": "Theatre Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "address"
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "active"
+  },
+  {
+   "fieldname": "section_break_sj7l",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "links": [],
+ "modified": "2026-10-08 11:37:06.861563",
+ "modified_by": "Administrator",
+ "module": "Theatre Booking System",
+ "name": "theatre",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "theatre_name",
+ "show_title_field_in_link": 1,
+ "search_fields": "theatre_name"
+}

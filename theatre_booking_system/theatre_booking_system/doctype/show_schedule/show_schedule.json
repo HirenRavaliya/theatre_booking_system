@@ -1,0 +1,15 @@
+{
+ "actions": [], "allow_rename": 1, "autoname": "field:schedule_name", "doctype": "DocType", "engine": "InnoDB", "naming_rule": "By fieldname",
+ "field_order": ["schedule_name", "show", "theatre", "show_date", "show_start_time", "show_end_time", "ticket_price"],
+ "fields": [
+  {"fieldname": "schedule_name", "fieldtype": "Data", "in_list_view": 1, "label": "Schedule Name", "reqd": 1, "unique": 1},
+  {"fieldname": "show", "fieldtype": "Link", "in_list_view": 1, "in_standard_filter": 1, "label": "Show", "options": "show", "reqd": 1},
+  {"fieldname": "theatre", "fieldtype": "Link", "in_list_view": 1, "in_standard_filter": 1, "label": "Theatre", "options": "theatre", "reqd": 1},
+  {"fieldname": "show_date", "fieldtype": "Date", "in_list_view": 1, "in_standard_filter": 1, "label": "Show Date", "reqd": 1},
+  {"fieldname": "show_start_time", "fieldtype": "Time", "in_list_view": 1, "label": "Start Time", "reqd": 1},
+  {"fieldname": "show_end_time", "fieldtype": "Time", "in_list_view": 1, "label": "End Time", "reqd": 1},
+  {"fieldname": "ticket_price", "fieldtype": "Currency", "in_list_view": 1, "label": "Ticket Price", "reqd": 1}
+ ],
+ "module": "Theatre Booking System", "name": "show schedule", "permissions": [{"create": 1, "delete": 1, "read": 1, "write": 1, "role": "System Manager"}],
+ "title_field": "schedule_name", "show_title_field_in_link": 1, "search_fields": "schedule_name, show, theatre"
+}

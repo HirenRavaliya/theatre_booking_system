@@ -1,0 +1,13 @@
+{
+ "actions": [], "allow_rename": 1, "autoname": "field:seat_name", "doctype": "DocType", "engine": "InnoDB", "naming_rule": "By fieldname",
+ "field_order": ["seat_name", "theatre", "row_alphabet", "seat_number", "active"],
+ "fields": [
+  {"fieldname": "seat_name", "fieldtype": "Data", "in_list_view": 1, "label": "Seat Name", "reqd": 1, "unique": 1},
+  {"fieldname": "theatre", "fieldtype": "Link", "in_list_view": 1, "in_standard_filter": 1, "label": "Theatre", "options": "theatre", "reqd": 1},
+  {"fieldname": "row_alphabet", "fieldtype": "Data", "in_list_view": 1, "label": "Row", "reqd": 1},
+  {"fieldname": "seat_number", "fieldtype": "Int", "in_list_view": 1, "label": "Seat Number", "reqd": 1},
+  {"default": "1", "fieldname": "active", "fieldtype": "Check", "in_list_view": 1, "label": "Active"}
+ ],
+ "module": "Theatre Booking System", "name": "theatre seat", "permissions": [{"create": 1, "delete": 1, "read": 1, "write": 1, "role": "System Manager"}],
+ "title_field": "seat_name", "show_title_field_in_link": 1, "search_fields": "seat_name, theatre"
+}
