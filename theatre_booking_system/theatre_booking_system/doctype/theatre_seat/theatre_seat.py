@@ -3,7 +3,7 @@ from frappe import _
 from frappe.model.document import Document
 
 
-class theatreseat(Document):
+class TheatreSeat(Document):
 	def before_naming(self):
 		self.seat_name = (self.seat_name or "").strip()
 

@@ -5,9 +5,6 @@ from frappe.utils import getdate, today
 
 
 class showschedule(Document):
-	def before_naming(self):
-		self.schedule_name = (self.schedule_name or "").strip()
-
 	def validate(self):
 		if getdate(self.show_date) < getdate(today()):
 			frappe.throw(_("A show cannot be scheduled in the past."))
@@ -30,4 +27,4 @@ class showschedule(Document):
 			(self.theatre, self.show_date, self.name, self.show_end_time, self.show_start_time),
 		)
 		if overlap:
-			frappe.throw(_("This theatre already has an overlapping show."))
+			frappe.throw(_("This theatre already has an overlapping show.")) 
